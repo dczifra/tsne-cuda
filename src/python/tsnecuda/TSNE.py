@@ -25,12 +25,12 @@ def ord_string(s):
 TsneConfig = namedtuple(
     'TsneConfig',
     ['result', 'points', 'dims', 'perplexity', 'learning_rate', 'early_exaggeration',
-     'magnitude_factor', 'num_neighbors', 'iterations', 'iterations_no_progress',
+     'magnitude_factor', 'batch_size', 'num_neighbors', 'iterations', 'iterations_no_progress',
      'force_magnify_iters', 'perplexity_search_epsilon', 'pre_exaggeration_momentum',
      'post_exaggeration_momentum', 'theta', 'epssq', 'min_gradient_norm', 'initialization_type',
      'preinit_data', 'dump_points', 'dump_file', 'dump_interval', 'use_interactive',
      'viz_server', 'viz_timeout', 'verbosity', 'print_interval', 'gpu_device', 'return_style',
-     'num_snapshots', 'distance_metric', 'batch_size'])
+     'num_snapshots', 'distance_metric'])
 
 
 class TSNE(object):
